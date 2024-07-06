@@ -441,7 +441,6 @@ header {
     cursor: pointer;
 }
 
-
 .search-button {
     background-color: blue;
     color: white;
@@ -454,6 +453,46 @@ header {
     flex: 1 1 calc(50% - 20px); /* Dva elementa po redu */
     max-width: 250px; /* Dodaj maksimalnu širinu za boxove */
 }
+
+.custom-dropdown {
+    flex: 1 1 calc(50% - 20px); /* Dva elementa po redu */
+    max-width: 250px; /* Dodaj maksimalnu širinu za boxove */
+    position: relative;
+}
+
+.dropdown-label {
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-content label:hover {
+    background-color: #f1f1f1;
+}
+
+
 
 
 /* Stilovi za mobilnu verziju */
